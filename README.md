@@ -1,7 +1,9 @@
 # -r hack@brown app
 
 Installation:
-pip install virtualenv
+sudo easy_install pip
+
+sudo pip install virtualenv
 
 virtualenv env
 
