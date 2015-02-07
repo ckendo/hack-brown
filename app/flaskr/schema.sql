@@ -1,5 +1,3 @@
-# this is where our DB schema will live!
-
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
     id integer PRIMARY KEY autoincrement,
