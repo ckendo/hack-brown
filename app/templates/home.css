@@ -1,23 +1,61 @@
 body{
 	color: white;
 	font-family: Helvetica;
-	background-color: #e2e2e2
-
+	background-color: #e2e2e2;
 }
 
-ul{
-	width: 200px;
+ul {
+	width: 300px;
 	list-style-type: none;
-	margin: 2px;
-	padding: 2px;
+	margin: 0px;
+	padding: 0px;
 	font-family: Helvetica;
-	background-color: #38ADCE;
+	font-size: 22px;
 	text-align: center;
+	letter-spacing: 4px;
+	background-color: #38ADCE;
 }
 
-a{
+li{
+	padding: 20px 0px;
+}
+
+li:hover {
+	background-color: #76B9CC;
+}
+
+a:link, a:visited{
 	display: block;
-	width: 200px;
+	width: 300px;
 	font-family: Helvetica;
+	text-decoration: none;
+	color: white;
+}
+
+a:hover, a:active {
+	color: #F89F44;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.home {
+	background-image: url("LongDasherTop.png");
+	width: 300px;
+	height: 281px;
+	background-size: contain;
+}
+
+#mainpage {
+	float: left;
+}
+
+.profilelink {
+	background-color: #F89F44;
+	width: 300px;
+	height: 100px;
+	text-align: left;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
