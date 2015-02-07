@@ -13,3 +13,6 @@ virtualenv env
 
 pip install Flask
 
+
+To run:
+python run.py
