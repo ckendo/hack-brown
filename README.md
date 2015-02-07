@@ -1,5 +1,7 @@
 # -r hack@brown app
 
+Better terminal for Mac OS: http://iterm2.com/
+
 Installation:
 sudo easy_install pip
 
