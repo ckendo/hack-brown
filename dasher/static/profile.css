@@ -54,6 +54,10 @@ a:hover, a:active {
 	vertical-align: top;
 }
 
+#profile{
+	display:table;
+}
+
 .profilelink {
 	background-color: #F89F44;
 	height: 100px;
@@ -128,13 +132,13 @@ p {
 }
 
 #right {
-	float: right;
 	background-color: white;
 	padding: 15px;
 	margin: 15px;
 	width: auto;
 	height: auto;
 	text-align: left;
+	display: table-cell;
 }
 
 #left{
@@ -142,14 +146,17 @@ p {
 	width: 450px;
 	text-align: center;
 	margin: 15px;
+	display:table-cell;
 }
 
-img{
-	padding: 15px;
+#imgContainer{
+	float:left;
+	width:50%;
+	text-align:center;
 }
 
 #firstRow {
-	width: 5%;
-	height: 5%;
+	width: 50%;
+	height: 50%;
 }
 

@@ -27,30 +27,30 @@
 			</div>
 		</div>
 		<div id="mainpage">
-			<h1>profile</h1>
-			<div id="left">
-				<img src="{{user.image_url}}" width="400px"/>
-				<div id="bio">
-					<h2>{{user.name}} </h2>
-					<h3>{{user.gender}}, {{user.age}} </h3>
-					<h3> location: {{user.state}} </h3>
-					<h3> language: {{user.language}} </h3>
-					<br>
-					<h3>bio: {{user.description}}</h3>
-					<!-- <p> {{user.interests}}</p> -->
+			<div id="profile">
+				<h1>profile</h1>
+				<div id="left">
+					<img src="{{user.image_url}}" width="400px"/>
+					<div id="bio">
+						<h2>{{user.name}} </h2>
+						<h3>{{user.gender}}, {{user.age}} </h3>
+						<h3> location: {{user.state}} </h3>
+						<h3> language: {{user.language}} </h3>
+						<br>
+						<h3>bio: {{user.description}}</h3>
+						<!-- <p> {{user.interests}}</p> -->
+					</div>
 				</div>
-			</div>
-			<div id="right">
-				<h2> herds </h2>
-				<div>
-				{% for interests in user.interests %}
-					{{interests.image_url}}
-					{% if loop.index < 2 %}
-						<img src={{interests.image_url}} id = "firstRow" />
-					{% else %}
-						<img src={{interests.image_url}} id = "firstRow" />
-					{% endif %}
-				{% endfor %}
+				<div id="right">
+					<h2> herds </h2>
+					<div>
+					{% for interests in user.interests %}
+						{{interests.image_url}}
+							<div id = "imgContainer">
+							<img src={{interests.image_url}} id = "firstRow" />
+							</div>
+					{% endfor %}
+				</div>
 			</div>
 		</div>
 	</div>
