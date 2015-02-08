@@ -64,22 +64,20 @@ a:hover, a:active {
 }
 
 #nav {
-	float:left;
 	background-color: #38ADCE;
 	padding-top: 50px;
 	width: 30%;
-	height: 100%;
-	float: left;
+	display: table-cell;
 }
 
 #mainpage {
-	float: left;
+	display: table-cell;
+	vertical-align: top;
 	width: 60%;
-	height: 100%;
 }
 
 .container {
-	height: 100%;
+	display: table;
 }
 
 html {
