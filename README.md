@@ -11,7 +11,7 @@ virtualenv env
 
 . env/bin/activate
 
-pip install Flask
+pip install -r requirements.txt
 
 
 To run:
