@@ -10,7 +10,9 @@ class User(db.Model):
         self.description = description
 
     def __repr__(self):
-        return '<User %r>' % self.name
+        return 'User(name:%s, description:%s)' % (self.name, self.description)
+
+    __str__ = __repr__
 
 db.drop_all()
 db.create_all()
