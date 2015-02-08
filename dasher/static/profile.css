@@ -83,8 +83,67 @@ html {
 }
 
 h1 {
-	float: left;
 	font-family: Helvetica;
 	font-size: 50px;
 	letter-spacing: 5px;
+	padding: 10px;
+	color: #F89F44;
+	font-weight: lighter;
+}
+
+h2 {
+	font-family: Helvetica;
+	font-size: 35px;
+	letter-spacing: 2px;
+	padding: 10px;
+	color: #76B9CC;
+	font-weight: lighter;
+}
+
+h3 {
+	font-family: Helvetica;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding: 10px;
+	color: #121212;
+	font-weight: lighter;
+}
+
+p {
+	font-family: Helvetica;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 10px;
+	color: #121212;
+	font-weight: lighter;
+}
+
+#bio {
+	background-color: white;
+	padding: 5px;
+	margin: 15px;
+	width: auto;
+	height: auto;
+	text-align: left;
+}
+
+#right {
+	float: right;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	width: auto;
+	height: auto;
+	text-align: left;
+}
+
+#left{
+	float: left;
+	width: 450px;
+	text-align: center;
+	margin: 15px;
+}
+
+img{
+	padding: 15px;
 }
