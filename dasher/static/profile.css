@@ -147,3 +147,8 @@ p {
 img{
 	padding: 15px;
 }
+
+#firstRow {
+	width: 5%;
+	height: 5%;
+}

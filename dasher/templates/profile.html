@@ -43,13 +43,14 @@
 			<div id="right">
 				<h2> herds </h2>
 				<div>
-				#<% i = 0 %>
-				<% for interests in enumerate(user.interests) %>
-					#<%if i < 2 %>
-						<img src= Interest.image_url id = "firstRow" />
-					#<% else %>
-						<img src = Interest.image_url id = "secondRow" />
-				#<% endfor %>
+				{% for interests in user.interests %}
+					{{interests.image_url}}
+					{% if loop.index < 2 %}
+						<img src={{interests.image_url}} id = "firstRow" />
+					{% else %}
+						<img src={{interests.image_url}} id = "firstRow" />
+					{% endif %}
+				{% endfor %}
 			</div>
 		</div>
 	</div>
