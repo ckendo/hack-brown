@@ -68,6 +68,7 @@ a:hover, a:active {
 	padding-top: 50px;
 	width: 30%;
 	display: table-cell;
+	vertical-align: top;
 }
 
 #mainpage {
@@ -112,7 +113,7 @@ h3 {
 	padding: 10px;
 	color: #F89F44;
 	font-weight: lighter;
-	text-align: left;
+	text-align: center;
 	margin: 0;
 }
 
@@ -131,10 +132,9 @@ h3 {
 .category {
 	width: 30%;
 	text-align: center;
-	margin: 10px;
-	padding: 10px;
-	float: left;
-}
+	margin: 0px;
+	padding: 0px;
+	display: inline;
 
 /*img {
 	max-width: 100%;
