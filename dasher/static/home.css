@@ -7,9 +7,11 @@ body{
 }
 
 ul {
+	float:left;
+	background-color: #3FADCC;
 	list-style-type: none;
 	margin: 0px;
-	padding: 0px;
+	padding-top: 0px;
 	font-family: Helvetica;
 	font-size: 22px;
 	text-align: center;
@@ -45,6 +47,7 @@ a:hover, a:active {
 	background-position: center;
 }
 
+
 .home:hover {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
@@ -69,10 +72,19 @@ a:hover, a:active {
 }
 
 #nav {
+	float:left;
 	background-color: #38ADCE;
-	width: 30%;
+	padding-top: 50px;
+	width: 15%;
 	height: 100%;
 	float: left;
+}
+
+#navProfile {
+	backround-image: url("sampleprofile.png");
+	width: 192px;
+	height: 50px;
+	background-color: #F79D4F;
 }
 
 .container {
