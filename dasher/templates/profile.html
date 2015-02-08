@@ -29,12 +29,12 @@
 		<div id="mainpage">
 			<h1>profile</h1>
 			<div id="left">
-				<img src="/static/img/sampleprofile.png" width="400px"/>
+				<img src="{{user.image_url}}" width="400px"/>
 				<div id="bio">
-					<h2> michael markell </h2>
-					<h3> male, 19 </h3>
-					<h3> location: delaware </h3>
-					<h3> language: english </h3>
+					<h2>{{user.name}} </h2>
+					<h3>{{user.gender}}, {{user.age}} </h3>
+					<h3> location: {{user.state}} </h3>
+					<h3> language: {{user.language}} </h3>
 					<br>
 					<h3>bio:</h3>
 					<p> I like underwater basket weaving. ;)) </p>
