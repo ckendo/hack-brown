@@ -8,6 +8,7 @@ from flask import request, session, g, redirect, url_for, \
 @app.route('/')
 def main():
     users = db.session.query(models.User).all()
-    all_text = ["%s %s" % (user.name, user.description) for user in users]
+    all_text = ["<li>%s %s</li>" % (user.name, user.description) for user in users]
 
-    return " | ".join(all_text)
+    # FIXME Put this in a real templating engine
+    return "<ul>%s</ul>" % "".join(all_text)
