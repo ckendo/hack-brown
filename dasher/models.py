@@ -51,24 +51,24 @@ db.drop_all()
 db.create_all()
 
 prepopulated_users = [
-    User('Tala Huhe', '', 24, 'CA', 'male', 'English', 'I like potatoes'),
-    User('Kenji Endo', '', 18, 'DE', 'male', 'English', 'I like kayaking'),
-    User('Michael Markell', '', 19, 'DE', 'male', 'English', 'I like underwater basket weaving ;))'),
-    User('Miranda Chao', '', 19, 'NY', 'female', 'English', 'I sleep a lot'),
-    User('Elbert Wang', '', 19, 'CA', 'male', 'English', 'I like binge eating'),
-    User('Molly Long', '', 21, 'CA', 'female', 'English', 'I like bunnies'),
-    User('Mackenzie Clark', '', 22, 'OR', 'female', 'English', 'I like long naps on the beach')
+    User('Tala Huhe', 'img/sampleprofile.jpg', 24, 'CA', 'male', 'English', 'I like potatoes'),
+    User('Kenji Endo', 'img/Kenji.png', 18, 'DE', 'male', 'English', 'I like kayaking'),
+    User('Michael Markell', 'img/Michael.png', 19, 'DE', 'male', 'English', 'I like underwater basket weaving ;))'),
+    User('Miranda Chao', 'img/Miranda.png', 19, 'NY', 'female', 'English', 'I sleep a lot'),
+    User('Elbert Wang', 'img/elbert.png', 19, 'CA', 'male', 'English', 'I like binge eating'),
+    User('Molly Long', 'img/Molly.png', 21, 'CA', 'female', 'English', 'I like bunnies'),
+    User('Mackenzie Clark', 'img/Mackenzie.png', 22, 'OR', 'female', 'English', 'I like long naps on the beach')
 ]
 
 prepopulated_interests = [
     Interest('Sleeping', '', 'Really really really fun outdoor activity underwater that\'s quite fun'),
-    Interest('Underwater Basket Weaving', '', 'Really fun outdoor activity underwater that\'s quite fun'),
-    Interest('Reindeer Watching', '', 'Like bird watching, but reindeer'),
-    Interest('Kayaking', '', 'Like underwater basket weaving, but more adventurous'),
-    Interest('Knitting', '', 'Really fun indoor activity without water that\'s quite fun'),
-    Interest('Drooling', '', 'Like underwater basket weaving, but your face, and no baskets'),
-    Interest('Sliding', '', 'By land or by sea'),
-    Interest('Candle Making', '', 'Let there be light')
+    Interest('Underwater Basket Weaving', 'img/basketweaving.png', 'Really fun outdoor activity underwater that\'s quite fun'),
+    Interest('Reindeer Watching', 'img/reindeer.png', 'Like bird watching, but reindeer'),
+    Interest('Kayaking', 'img/kayak.png', 'Like underwater basket weaving, but more adventurous'),
+    Interest('Knitting', 'img/knitting.png', 'Really fun indoor activity without water that\'s quite fun'),
+    Interest('Drooling', 'img/drooling.png', 'Like underwater basket weaving, but your face, and no baskets'),
+    Interest('Sliding', 'img/sliding.png', 'By land or by sea'),
+    Interest('Candle Making', 'img/candle.png', 'Let there be light')
 ]
 
 [db.session.add(model) for model in prepopulated_users]

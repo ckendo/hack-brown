@@ -7,11 +7,10 @@ body{
 }
 
 ul {
-	float:left;
 	background-color: #3FADCC;
 	list-style-type: none;
 	margin: 0px;
-	padding-top: 0px;
+	padding: 0px;
 	font-family: Helvetica;
 	font-size: 22px;
 	text-align: center;
@@ -20,14 +19,16 @@ ul {
 }
 
 li{
+	display: block;
 	padding: 30px 0px;
 }
 
 li:hover {
+	display: block;
 	background-color: #76B9CC;
 }
 
-a:link, a:visited{
+a:link, a:visited {
 	display: block;
 	font-family: Helvetica;
 	text-decoration: none;
@@ -39,18 +40,12 @@ a:hover, a:active {
 }
 
 .home {
-	background-image: url("/static/img/LongDasherTop.png");
+	background-image: url("../img/LongDasherTop.png");
 	width: 100%;
 	height: 300px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-
-.home:hover {
-	opacity: 0.5;
-	filter: alpha(opacity=50);
 }
 
 #mainpage {
@@ -75,23 +70,15 @@ a:hover, a:active {
 	float:left;
 	background-color: #38ADCE;
 	padding-top: 50px;
-	width: 15%;
+	width: 30%;
 	height: 100%;
 	float: left;
 }
 
-<<<<<<< HEAD
 #mainpage {
 	float: left;
 	width: 60%;
 	height: 50%;
-=======
-#navProfile {
-	backround-image: url("sampleprofile.png");
-	width: 192px;
-	height: 50px;
-	background-color: #F79D4F;
->>>>>>> 025583623389babc8f7799d50e446f59e0680547
 }
 
 .container {
@@ -126,17 +113,9 @@ h2 {
 
 .homesquares {
 	background-color: white;
-<<<<<<< HEAD
 	padding: 12px;
 	margin: 31px;
 	margin-top: 0px;
 	text-align: center;
 }
-=======
-	padding: 5px;
-	margin: 15px;
-	width: auto;
-	height: auto;
-	text-align: left;
-}
->>>>>>> 025583623389babc8f7799d50e446f59e0680547
+
