@@ -20,8 +20,8 @@ python run.py
 GITHUB STUFF
 
 Pushing changes:
-git add <files you want to add>
-git commit -m "<your message>"
-git pull --rebase
-<fix merge conflicts if any exist>
-git push
+<br>git add files_to_add
+<br>git commit -m "your_message"
+<br>git pull --rebase
+<br>-- fix merge conflicts if any exist --
+<br>git push
