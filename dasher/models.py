@@ -26,6 +26,7 @@ class User(db.Model):
 
 class Interest(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80), unique=False)
     image_url = db.Column(db.String(200), unique=False)
     description = db.Column(db.String(120), unique=False)
 
@@ -42,7 +43,7 @@ class Interest(db.Model):
 db.drop_all()
 db.create_all()
 
-prepopulated_models = [
+prepopulated_users = [
     User('Kenji Endo', '', 18, 'DE', 'male', 'English', 'I like kayaking'),
     User('Michael Markell', '', 19, 'DE', 'male', 'English', 'I like underwater basket weaving ;))'),
     User('Miranda Chao', '', 19, 'NY', 'female', 'English', 'I sleep a lot'),
@@ -51,5 +52,16 @@ prepopulated_models = [
     User('Mackenzie Clark', '', 22, 'OR', 'female', 'English', 'I like long naps on the beach')
 ]
 
-[db.session.add(model) for model in prepopulated_models]
+prepopulated_interests = [
+    Interest('Underwater Basket Weaving', '', 'Really fun outdoor activity underwater that\'s quite fun'),
+    Interest('Reindeer Watching', '', 'Like bird watching, but reindeer'),
+    Interest('Kayaking', '', 'Like underwater basket weaving, but more adventurous'),
+    Interest('Knitting', '', 'Really fun indoor activity without water that\'s quite fun'),
+    Interest('Drooling', '', 'Like underwater basket weaving, but your face, and no baskets'),
+    Interest('Sliding', '', 'By land or by sea'),
+    Interest('Candle Making', '', 'Let there be light')
+]
+
+[db.session.add(model) for model in prepopulated_users]
+[db.session.add(model) for model in prepopulated_interests]
 db.session.commit()
