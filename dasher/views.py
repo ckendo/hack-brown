@@ -21,5 +21,5 @@ def render_herds_page():
 
 @app.route('/profile/<int:user_id>')
 def render_profile_page(user_id):
-    user = db.session.query(models.User).filter(models.User.id == user_id).all()[0]
+    user = db.session.query(models.User).filter_by(id=3).first()
     return render_template('profile.html', user=user)
