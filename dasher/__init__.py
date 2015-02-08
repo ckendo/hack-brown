@@ -1,9 +1,11 @@
 from flask import Flask
-
-# all the imports
-import sqlite3
-from flask import Flask, request, session, g, redirect, url_for, \
-     abort, render_template, flash
+from flask.ext.sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-from dasher import views
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/dasher.db'
+
+db = SQLAlchemy(app)
+
+import dasher.views
+import dasher.models
