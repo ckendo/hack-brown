@@ -42,14 +42,14 @@
 			</div>
 			<div id="right">
 				<h2> herds </h2>
-				<div id="firstrow">
-					<img src="/static/img/basketweaving.png" width="250px"/>
-					<img src="/static/img/candle.png" width="250px"/>
-				</div>
-				<div id="secondrow">
-					<img src="/static/img/existing.png" width="250px"/>
-					<img src="/static/img/knitting.png" width="250px"/>
-				</div>
+				<div>
+				#<% i = 0 %>
+				<% for interests in enumerate(user.interests) %>
+					#<%if i < 2 %>
+						<img src= Interest.image_url id = "firstRow" />
+					#<% else %>
+						<img src = Interest.image_url id = "secondRow" />
+				#<% endfor %>
 			</div>
 		</div>
 	</div>
