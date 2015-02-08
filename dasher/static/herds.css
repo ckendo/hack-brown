@@ -63,32 +63,31 @@ a:hover, a:active {
 	filter: alpha(opacity=50);
 }
 
-#nav {
-	float:left;
-	background-color: #38ADCE;
-	padding-top: 50px;
-	width: 30%;
-	height: 100%;
-	float: left;
-}
-
 #kayaking{
 	float: right;
 	margin: 15px;
 	width: 60%;
 	background-color: white;
+}
 
+#nav {
+	background-color: #38ADCE;
+	padding-top: 50px;
+	width: 30%;
+	display: table-cell;
+	vertical-align: top;
 }
 
 #mainpage {
-	float: left;
+	display: table-cell;
+	vertical-align: top;
 	width: 60%;
-	height: 100%;
 }
 
 .container {
-	height: 100%;
+	display: table;
 }
+
 
 html {
 	height: 100%;
@@ -150,4 +149,6 @@ img {
 	padding: 15px;
 }
 
-
+p {
+	color: #000000;
+}

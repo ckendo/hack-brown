@@ -1,60 +1,46 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html>
-<head>
+{% block head %}
+	{{ super() }}
 	<title>Home</title>
-	<link rel="icon" href="../img/LongDasherIcon.png" type="img/gif">
 	<link rel="stylesheet" type="text/css" href="../static/home.css">
-</head>
-<body>	 
-	<div class="container">
-		<div id="nav">
-			<div class="home">
-				<a href="/home"></a>
-			</div>
-			<div class="profilelink">
-				<!-- this will link you to your own profile -->
-				<a href="/profile/{{users[0].id}}"><img src="/static/img/sampleprofile.png" width="100px"></a>
-			</div>
-			<div class="sidebar">
-				<ul>
-				<!-- sidebar -->
-				<li><a href="/home">home</a></li>
-				<li><a href="/herds">herds</a></li>
-				<li><a href="/message">message</a></li>
-				<li><a href="/settings">settings</a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="mainpage">
-			<h1>hello {{users[0].name}} </h1>
-			<div id="myherds" class="homesquares">
-				<h2>my herds</h2><br><br>
-				<img src="/static/img/knitting.jpg" width="200px">
-				<img src="/static/img/candlemaking.jpg" width="200px">
-				<img src="/static/img/reindeerwatching.jpg" width="200px">
+{% endblock %}
 
-				<a href="/kayaking"><img src="/static/img/kayaking.jpg" width="200px"></a>
-				<img src="/static/img/drooling.jpg" width="200px">
-				<img src="/static/img/sliding.jpg" width="200px">
-				<img src="/static/img/underwaterbasketweaving.jpg"width="200px">
-			</div>
-			<div id="findmore" class="homesquares">
-				<h2>find more</h2>
-				<div class="category">
-					<h3>recommended</h3>
-					<img src="/static/img/underwaterbasketweaving.jpg" width="160px">
-				</div>
-				<div class="category">
-					<h3>popular</h3>
-					<img src="/static/img/reindeerwatching.jpg" width="160px">
-				</div>
-				<div class="random">
-					<h3>random</h3>
-					<img src="/static/img/drooling.jpg" width="160px"> 
-				</div>
-			</div>
+{% block content %}
+<div id="mainpage">
+	<h1>hello {{users[0].name}} </h1>
+	<div id="myherds" class="homesquares">
+		<h2>my herds</h2><br><br>
+		<img src="/static/img/knitting.jpg" width="200px">
+		<img src="/static/img/candlemaking.jpg" width="200px">
+		<img src="/static/img/reindeerwatching.jpg" width="200px">
+
+		<a href="/kayaking"><img src="/static/img/kayaking.jpg" width="200px"></a>
+		<img src="/static/img/drooling.jpg" width="200px">
+		<img src="/static/img/sliding.jpg" width="200px">
+		<img src="/static/img/underwaterbasketweaving.jpg"width="200px">
+	</div>
+	<div id="findmore" class="homesquares">
+		<h2>find more</h2>
+		<h3>recommended</h3>
+		<div class="category">
+			<img src="/static/img/underwaterbasketweaving.jpg" width="160px">
+			<img src="/static/img/underwaterbasketweaving.jpg" width="160px">
+			<img src="/static/img/underwaterbasketweaving.jpg" width="160px">
+		</div>
+		<h3>popular</h3>
+		<div class="category">
+			<img src="/static/img/reindeerwatching.jpg" width="160px">
+			<img src="/static/img/reindeerwatching.jpg" width="160px">
+			<img src="/static/img/reindeerwatching.jpg" width="160px">
+		</div>
+		<h3>random</h3>
+		<div class="category">
+			<img src="/static/img/drooling.jpg" width="160px">
+			<img src="/static/img/drooling.jpg" width="160px">
+			<img src="/static/img/drooling.jpg" width="160px"> 
 		</div>
 	</div>
-</body>
-</html>
+</div>
+{% endblock %}
+
