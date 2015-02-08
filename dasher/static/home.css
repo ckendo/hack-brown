@@ -75,6 +75,12 @@ a:hover, a:active {
 	float: left;
 }
 
+#mainpage {
+	float: left;
+	width: 60%;
+	height: 50%;
+}
+
 .container {
 	height: 100%;
 }
@@ -87,9 +93,10 @@ h1 {
 	font-family: Helvetica;
 	font-size: 50px;
 	letter-spacing: 5px;
-	padding: 10px;
+	padding: 20px;
 	color: #F89F44;
 	font-weight: lighter;
+	margin: 0;
 }
 
 h2 {
@@ -99,14 +106,15 @@ h2 {
 	padding: 10px;
 	color: #76B9CC;
 	font-weight: lighter;
+	text-align: left;
+	margin: 0;
 }
 
 
-#myherds {
+.homesquares {
 	background-color: white;
-	padding: 5px;
-	margin: 15px;
-	width: auto;
-	height: auto;
-	text-align: left;
+	padding: 12px;
+	margin: 31px;
+	margin-top: 0px;
+	text-align: center;
 }
